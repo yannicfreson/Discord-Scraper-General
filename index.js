@@ -11,7 +11,7 @@ let doneChannels = [];
 
 const channels = require("./channels");
 const channelsObj = channels.channelsObj;
-const fetchStartDate = "2022-01-01T00:00:00.000000+00:00"; // New Year 2022
+const fetchStartDate = "2023-01-01T00:00:00.000000+00:00"; // New Year 2023
 
 let startTime = Date.now();
 let channelID;
@@ -125,6 +125,7 @@ function setupNextChannel() {
     doneChannels.forEach((channel) => {
       console.log(channel);
     });
+    console.log("\n");
 
     // Render the progress bar
     console.log(
